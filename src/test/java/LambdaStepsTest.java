@@ -1,7 +1,4 @@
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -39,9 +36,8 @@ public class LambdaStepsTest extends TestBase {
     }
 
     @Test
-    @DisplayName("Наименование таба Issue при открытии репозитория с главной страницы")
-    @Story("Страница репозитория github для неатворизованного")
-    public void stepsAnnitationTest (){
+    @DisplayName("Наличие Issue при открытии репозитория с главной страницы пользователя")
+    public void stepsAnnotationTest (){
 
         SelenideLogger.addListener("allure", new AllureSelenide());
         StepsAnnotationTest steps = new StepsAnnotationTest();
