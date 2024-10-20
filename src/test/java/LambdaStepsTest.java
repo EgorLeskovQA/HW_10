@@ -40,7 +40,6 @@ public class LambdaStepsTest extends TestBase {
 
     @Test
     @DisplayName("Наименование таба Issue при открытии репозитория с главной страницы")
-    @Severity(SeverityLevel.TRIVIAL)
     @Story("Страница репозитория github для неатворизованного")
     public void stepsAnnitationTest (){
 
