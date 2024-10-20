@@ -40,7 +40,7 @@ public class LambdaStepsTest extends TestBase {
     public void stepsAnnotationTest (){
 
         SelenideLogger.addListener("allure", new AllureSelenide());
-        StepsAnnotationTest steps = new StepsAnnotationTest();
+        StepsAnnotation steps = new StepsAnnotation();
 
         steps.openMainPage();
         steps.openRepositories();
